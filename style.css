@@ -1,0 +1,122 @@
+* {
+    margin: auto;
+    /*поставить все по центру*/
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 300px;
+    color: #545454;
+    text-shadow: 0px 3px 4px #afafaf;
+    /*тени у текста*/
+    position: static;
+    top: 50%;
+    width: 100%;
+    /* 4 посл строки ставят текст по центу, усли position abcol to относительно всей страницы, а так относительно только div*/
+    text-align: center;
+}
+
+input {
+    margin: 3px;
+    width: 350px;
+    height: 30px;
+    padding: 3px 0px 3px 35px;
+    /* 4 пар - Отступ для иконки */
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #e1e1e1;
+    position: relative;
+    right: 13px;
+
+}
+
+#imgg {
+    width: 23px;
+    position: relative;
+    top: 7px;
+    left: 25px;
+    z-index: 1;
+    /*картинки по верх inputтов*/
+}
+
+.bth {
+    background: #51A3B8;
+    font-size: 14px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 7px 0px #387796;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    border-color: rgb(126, 214, 255);
+}
+
+.bth:hover {
+    transform: scale(1.05);
+}
+
+.bth:active {
+    top: 3px;
+    box-shadow: 0 2px 0px #387796;
+    transition: all .2s;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 440px;
+    border-radius: 30px;
+    background-color: #eeeeee;
+    position: relative;
+    top: 200px;
+}
+
+.ss {
+    position: relative;
+    left: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* добавить расстояния меж элементами */
+    width: 230px;
+}
+input:hover{
+    border-color: #51A3B8;
+    
+}
+input:focus{
+    border-color: #387796;
+    outline: none;
+}
+.sss{
+    color: #2c7a8e;
+}
+.sss:hover{
+    color: rgb(160, 90, 225);
+}
+
+
+
+/*Я украл кнопку, она слишком скучная, но вот код который повторяет стиль той кнопки с референса. Составлял сам
+    .bth{
+        width: 100px;
+        padding: 5px;
+        background: linear-gradient(rgb(255, 162, 0), rgb(198, 119, 0));
+        border-radius: 8px;
+        border-color: #eeeeee;
+        color: #eeeeee;
+    }
+    .bth:hover {
+        transform: scale(1.05);
+    }
+    .bth:active {
+        transform: scale(0.95);
+    }*/
